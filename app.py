@@ -6,6 +6,7 @@ import os
 import tempfile
 
 app = Flask(__name__)
+app.json.ensure_ascii = False
 
 mapping = {
     "ألف": "ا", "الف": "ا", "ألفا": "ا", "الفا": "ا",
